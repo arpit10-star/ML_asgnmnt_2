@@ -59,14 +59,21 @@ The models were compared based on their ROC AUC scores, as well as precision, re
 *   `feature_engine`
 *   `xgboost`
 *   `joblib`
-| ML Model Name         | Observation about model performance                                                                                                                                                                                                                                                                                                                           |
-|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Logistic Regression**   | Achieved the highest ROC AUC score (0.759), indicating good overall discriminative power. It also showed the best recall (0.79) for the positive class, meaning it's effective at identifying actual heart disease cases, though its precision (0.23) is relatively low, leading to a moderate F1-score (0.36).                                                         |
-| **Decision Tree**         | Performed poorly across all metrics compared to Logistic Regression, with an ROC AUC score of 0.577. Its recall (0.23) and precision (0.22) for the positive class are low, suggesting it struggles with both identifying actual positive cases and minimizing false positives. The F1-score (0.22) is also very low.                                                 |
-| **kNN**                   | Showed a moderate ROC AUC score (0.556). While its precision (0.28) is slightly better than Decision Tree, its recall (0.10) is very low, indicating it misses a large number of actual positive cases. This leads to a very low F1-score (0.14) for the positive class.                                                                                          |
-| **Naive Bayes**           | Had the second-highest ROC AUC score (0.733) and strong recall (0.76) for the positive class, similar to Logistic Regression. However, its precision (0.20) is the lowest among all models, resulting in a large number of false positives and a low F1-score (0.32).                                                                                              |
-| **Random Forest (Ensemble)** | Showed a low ROC AUC score (0.542) and poor performance on the positive class metrics. Its precision (0.31) is the highest among the tree-based and KNN models, but its recall (0.09) is very low, making it ineffective at detecting positive cases. The F1-score (0.14) is also very low.                                                                   |
-| **XGBoost (Ensemble)**    | Presented a low ROC AUC score (0.546). It had the highest precision (0.52) for the positive class, meaning when it predicts 'Yes', it's more often correct. However, its recall (0.10) is very low, indicating it misses many actual heart disease cases. This imbalance between high precision and low recall leads to a low F1-score (0.17). |
+
+  
+| ML Model Name         | Observation about model performance
+
+| **Logistic Regression**   | Achieved the highest ROC AUC score (0.759), indicating good overall discriminative power. It also showed the best recall (0.79) for the positive class, meaning it's effective at identifying actual heart disease cases, though its precision (0.23) is relatively low, leading to a moderate F1-score (0.36).
+
+| **Decision Tree**         | Performed poorly across all metrics compared to Logistic Regression, with an ROC AUC score of 0.577. Its recall (0.23) and precision (0.22) for the positive class are low, suggesting it struggles with both identifying actual positive cases and minimizing false positives. The F1-score (0.22) is also very low.     
+
+| **kNN**                   | Showed a moderate ROC AUC score (0.556). While its precision (0.28) is slightly better than Decision Tree, its recall (0.10) is very low, indicating it misses a large number of actual positive cases. This leads to a very low F1-score (0.14) for the positive class.
+
+| **Naive Bayes**           | Had the second-highest ROC AUC score (0.733) and strong recall (0.76) for the positive class, similar to Logistic Regression. However, its precision (0.20) is the lowest among all models, resulting in a large number of false positives and a low F1-score (0.32).
+
+| **Random Forest (Ensemble)** | Showed a low ROC AUC score (0.542) and poor performance on the positive class metrics. Its precision (0.31) is the highest among the tree-based and KNN models, but its recall (0.09) is very low, making it ineffective at detecting positive cases. The F1-score (0.14) is also very low.
+
+| **XGBoost (Ensemble)**    | Presented a low ROC AUC score (0.546). It had the highest precision (0.52) for the positive class, meaning when it predicts 'Yes', it's more often correct. However, its recall (0.10) is very low, indicating it misses many actual heart disease cases. This imbalance between high precision and low recall leads to a low F1-score (0.17).
 
 
 ## How to Run
